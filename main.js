@@ -48,7 +48,7 @@ function formatTime(ms) {
 document.querySelector('#btn-copy').addEventListener('click', function () {
   let res = ""
   for (let i = 1; i <= 4; i++){
-    res+= `	${document.querySelector('#r-'+1).textContent}`
+    res+= `	${document.querySelector('#r-'+i).textContent}`
   }
   res = "AC	1"+res
   copyToClipboard(res)
