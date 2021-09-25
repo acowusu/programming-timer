@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timer</title>
+</head>
+
+<body>
+  <div id="app" class="container py-4">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <h1 class="display-5 fw-bold" id="master">00:00</h1>
+      <div id="btn-container">
+        <button type="button" id="b-1" class="btn-timer btn btn-lg btn-success display-5 fw-bold">Start reading</button>
+        <button type="button" id="b-2" class="btn-timer disabled btn btn-lg btn-info display-5 fw-bold">Start thinking</button>
+        <button type="button" id="b-3" class="btn-timer disabled btn btn-lg btn-warning display-5 fw-bold">Start coding</button>
+        <button type="button" id="b-4" class="btn-timer disabled btn btn-lg btn-primary display-5 fw-bold">Start debugging</button>
+        <button type="button" id="b-5" class="btn-timer disabled btn btn-lg btn-danger display-5 fw-bold">Stop</button>
+
+      </div>
+
+      <div class="res-box display-5">
+        <p>Reading :   <span class="res" id="r-1">00.00</span></p>
+        <p>Thinking :  <span class="res" id="r-2">00.00</span></p>
+        <p>Coding :    <span class="res" id="r-3">00.00</span></p>
+        <p>Debugging : <span class="res" id="r-4">00.00</span></p>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-dark " id="btn-copy" type="button">Copy</button>
+        </div>    </div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
